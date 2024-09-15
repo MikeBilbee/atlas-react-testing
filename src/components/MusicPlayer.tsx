@@ -40,7 +40,7 @@ const MusicPlayer: React.FC = () => {
 			{loading && <div>Loading...</div>}
 
 			{!loading && currentSong && (
-				<div className="md:w-1/2 p-4"> 
+				<div data-testid="currently-playing" className="md:w-1/2 p-4"> 
 					<CurrentlyPlaying
 						song={currentSong}
 						playlist={playlistData} 
@@ -53,7 +53,7 @@ const MusicPlayer: React.FC = () => {
 			</div>
 			)}
 			{!loading && (
-				<div className="md:w-1/2 p-4"> 
+				<div data-testid="playlist" className="md:w-1/2 p-4"> 
 					<Playlist songs={playlistData}
 						onSongSelect={handleSongSelect}
 						currentSong={currentSong}

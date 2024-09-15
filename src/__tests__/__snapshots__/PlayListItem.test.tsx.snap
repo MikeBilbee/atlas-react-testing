@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PlayListItem component > renders with song details 1`] = `
+<div>
+  <div
+    class="flex items-center justify-between py-1 px-5"
+  >
+    <div>
+      <h3
+        class="text-lg font-medium dark:text-gray-400"
+      >
+        Sample Song
+      </h3>
+      <p
+        class="dark:text-gray-500 text-sm"
+      >
+        Test Artist
+      </p>
+    </div>
+    <p
+      class="dark:text-gray-500 text-sm"
+    >
+      3:45
+    </p>
+  </div>
+</div>
+`;

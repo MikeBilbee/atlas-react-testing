@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoverArt component > renders with placeholder image when imageUrl is not provided 1`] = `
+<div>
+  <div
+    class="w-30 h-30 overflow-hidden rounded-lg shadow-md"
+  >
+    <img
+      alt="Cover Art"
+      class="w-full h-full object-cover"
+      src="/src/assets/placeholder.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`CoverArt component > renders with provided imageUrl 1`] = `
+<div>
+  <div
+    class="w-30 h-30 overflow-hidden rounded-lg shadow-md"
+  >
+    <img
+      alt="Cover Art"
+      class="w-full h-full object-cover"
+      src="https://example.com/image.jpg"
+    />
+  </div>
+</div>
+`;

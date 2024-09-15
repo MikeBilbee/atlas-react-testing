@@ -21,6 +21,7 @@ const Playlist: React.FC<PlaylistProps> = ({ songs, onSongSelect, currentSong })
 			<h2 className="mb-4 text-[1.45rem] font-bold dark:text-gray-400">Playlist</h2>
 			{songs.map((song) => (
 				<div 
+					data-testid="playlist-item"
 					key={song.title} 
 					onClick={() => onSongSelect(song)} 
 					className={ `cursor-pointer ${song.title === currentSong?.title ? ' rounded-md bg-gray-300 dark:bg-gray-700' : ''}`}
@@ -28,7 +29,7 @@ const Playlist: React.FC<PlaylistProps> = ({ songs, onSongSelect, currentSong })
 					<PlayListItem
 						title={song.title}
 						artist={song.artist}
-						length={song.duration} 
+						duration={song.duration} 
 					/>
 				</div>
 			))}

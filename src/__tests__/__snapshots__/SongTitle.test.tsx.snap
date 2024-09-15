@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle component > renders with long title and artist 1`] = `
+<div>
+  <div>
+    <h1
+      class="text-3xl font-bold dark:text-gray-400 mb-2"
+    >
+      This is a very long song title that might wrap to multiple lines
+    </h1>
+    <h2
+      class="text-gray-600 dark:text-gray-500"
+    >
+      This is also a very long artist name that might wrap
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SongTitle component > renders with title and artist 1`] = `
+<div>
+  <div>
+    <h1
+      class="text-3xl font-bold dark:text-gray-400 mb-2"
+    >
+      Test Title
+    </h1>
+    <h2
+      class="text-gray-600 dark:text-gray-500"
+    >
+      Sample Artist
+    </h2>
+  </div>
+</div>
+`;
